@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header';
+import { Global } from './components/styles/Global.styled';
+import { Container } from './components/styles/Container.styled';
+import { Hero } from './components/Hero';
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+  colors: {
+    gray: '#8a90a2',
+    purple: '#5956e9',
+    yellow: '#ffd109'
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <ThemeProvider theme={theme}>
+    <Global>
+
+    <Header />
+    
+    <Container>
+          
+        
+
+        <body>
+          <Hero/>
+        </body>
+    
+    </Container>
+    </Global>
+    </ThemeProvider>
+
   );
 }
 
