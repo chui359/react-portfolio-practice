@@ -7,24 +7,28 @@ export const StyleHeader = styled.div`
         background-color: #fff;
         overflow: hidden;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%; /* Full width */
     }
 
     div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 30px 30px;
+        margin: 10px 10px;
     }
 
     h2 {
-        display: block;
+        margin: 0 auto 0 50px;
+        font-family: DM Sans,sans-serif;
         font-size: 1.5em;
         font-weight: bold;
         font-family: 'Rock Salt', cursive;
     }
 
     nav{
-        font-size: 18px;
+        font-size: 20px;
         display: flex;
         justify-content: center;
         align-items: center;

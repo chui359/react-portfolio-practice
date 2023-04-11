@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleHero } from './styles/Hero.styled'
 import { FaGithubSquare, FaGithub, FaLinkedin } from 'react-icons/fa'
 
-function Hero() {
+function Hero2() {
   return (
     
     <StyleHero>
@@ -32,4 +32,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero2
