@@ -56,9 +56,9 @@ export const StyleHero = styled.div`
 
     .Hero-contain {
         text-align: center;
-        margin-right: 0;
-        margin-left: auto;
+        margin: 0 auto;
         position: relative;
+        width: 100%;
 
         ul {
             position: absolute;
@@ -87,7 +87,7 @@ export const StyleHero = styled.div`
     .hero-img {
         //position: relative;
         z-index: -1;
-        width: 450px;
+        //width: 700px;
 
     }
 

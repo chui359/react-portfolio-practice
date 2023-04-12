@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleHero } from './styles/Hero.styled'
+import { StyleHero } from './styles/Hero2.styled'
 import { FaGithubSquare, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 function Hero2() {
@@ -10,13 +10,12 @@ function Hero2() {
     <div className='Hero-contain'>
         <img className='hero-img' src=".././images/hero-3.png" alt="" />
         <ul>
-            <li><FaGithubSquare/>GITHUB</li>
-            <li><FaLinkedin/>LINKEDIN</li>
+            <li><h1>YUNCHENG <br/> <span>前端</span> 作品集</h1></li>
         </ul>
             {/* <h3 className='More-inf'><FaMouse/> <br/> &#8595;</h3> */}
     </div>
     
-
+    {/*
     <div className='Hero-dec'>
         <h1>YUN CHENG <br/> <span>前端</span> 作品集</h1>
         <p>Transforming complex ideas into elegant and scalable front-end solutions.</p>
@@ -26,6 +25,7 @@ function Hero2() {
             <li>LINKEDIN</li>
         </ul>
     </div>
+    */}
     
     </StyleHero>
 
