@@ -5,6 +5,7 @@ import  Hero3  from './components/Hero3';
 import { ThemeProvider } from 'styled-components';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 const theme = {
   colors: {
@@ -25,15 +26,10 @@ function App() {
     <GlobalStyles />
 
     <Header />
-    
-    
-
     <Hero3/>
     <Portfolio/>
     <AboutMe/>
-
-
-    
+    <Contact/>
 
     </ThemeProvider>
     </>

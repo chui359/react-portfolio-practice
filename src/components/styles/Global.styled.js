@@ -6,12 +6,14 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     }
     body {
-    background: ${({ theme }) => theme.colors.body};
-    color: hsl(192, 100%, 9%);
+    background: #080808;
+    //color: hsl(192, 100%, 9%);
+    color: #fff;
     //font-family: 'Poppins', sans-serif;
     font-family: Noto Sans TC,sans-serif;
     font-size: 1.15em;
     margin: 0;
+    padding: 0;
     }
     p {
     opacity: 0.6;
@@ -42,6 +44,29 @@ const GlobalStyles = createGlobalStyle`
     h3 {
       font-weight: 600;
       margin-bottom: 10px;
+    }
+    .row {
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .btn {
+      display: block;
+      width: fit-content;
+      border: 1px solid #ff004f;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      background-color: transparent;
+      transition: 0.5s;
+    }
+    .btn:hover {
+      background: #ff004f;
+    }
+    .btn.btn2 {
+      display: inline-block;
+      background: #ff004f;
     }
 `
 

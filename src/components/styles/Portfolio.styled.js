@@ -6,6 +6,8 @@ export const StylePortfolio = styled.div`
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding: 80px 0;
+        text-align: center;
         
         .portfolio-card {
             width: 50%;
@@ -15,78 +17,54 @@ export const StylePortfolio = styled.div`
         img {
             width: 100%;
             position: relative;
+            transition: transform 0.5s;
         }
 
         .portfolio-dec {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background-color: black;
-            width: 0;
+            width: 100%;
             height: 0;
             overflow: hidden;
             opacity: 0.7;
-            transition: all 0.5s ease-in-out;;
+            transition: height 0.5s;
             text-align: center;
-        }
-
-        p {
-            font-size: 25px;
-            text-align: center;
-            text-indent: 2em;
-            margin: 0 auto;
-        }
-    }
-
-    .portfolio-card:hover .portfolio-dec {
-            display: block;
             color: white;
-            width: 100%;
-            height: 100%;
-        }
-    
-    .card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        border-radius: 5px;
-        margin: 50px auto;
-        
-
-        .img-container {
-            width: 50%;
-            -webkit-filter: brightness(100%);
-        }
-
-        .img-container:hover {
-            -webkit-filter: brightness(70%);
-            -webkit-transition: all 1s ease;
-            -moz-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            -ms-transition: all 1s ease;
-            transition: all 1s ease;
-        }
-
-        img {
-            border-radius: 10px;
-        }
-
-        .container {
-            text-align: center;
-            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         p {
             font-size: 25px;
             text-align: start;
             text-indent: 2em;
+            margin: 0 auto;
+            margin: 20px 50px;
+            opacity: 1;
+        }
+
+        a{
+            color: #fff;
+        }
+
+        .btn {
+            margin: 0 auto;
         }
     }
 
+    .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    }
 
+    .portfolio-card:hover .portfolio-dec {
+            display: block;
+            height: 100%;
+        }
+    
     .small-card-container {
         display: flex;
         align-items: center;
@@ -95,17 +73,23 @@ export const StylePortfolio = styled.div`
     }
 
     .small-card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
         padding: 10px;
         margin: 10px;
         font-size: 25px;
         background-color: white;
         color: black;
+        opacity: 1;
     }
 
     .demo-container {
-        margin: 30px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: ${({theme}) => theme.colors.yellow};
+        width: max-content;
+        text-align: center;
+        border-radius: 15px;
+        transition: 0.3s;
+        opacity: 1;
     }
 
     .demo {
@@ -113,12 +97,74 @@ export const StylePortfolio = styled.div`
         justify-content: center;
         align-items: center;
         font-size: 25px;
-        transition: 0.3s;
+        color: black;
         cursor: pointer;
     }
 
-    .demo:hover {
-        color: ${({theme}) => theme.colors.brown}
+    .demo-container:hover {
+        background-color: ${({theme}) => theme.colors.orange}
+    }
+
+    .work-list {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;  
+        margin-top: 50px;
+    }
+
+    .work {
+        flex-basis: 50%;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .work-dec {
+        flex-basis: 45%;
+        text-align: center;        
+    }
+
+    .sub-work {
+        width:300px;
+        border-radius: 10px;
+        margin: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .layer {
+        height: 0;
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        transition: height 0.5s;
+    }
+
+    .work:hover img {
+        transform: scale(1.1);
+    }
+
+    .work:hover .layer {
+        height: 100%;
+    }
+
+    .sub-work:hover img {
+        transform: scale(1.1);
+    }
+
+    .sub-work:hover .layer {
+        height: 100%;
     }
 
 `
