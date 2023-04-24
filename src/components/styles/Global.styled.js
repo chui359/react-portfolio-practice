@@ -2,72 +2,124 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
     
-  * {
-    box-sizing: border-box;
-    }
-    body {
-    background: #080808;
-    //color: hsl(192, 100%, 9%);
-    color: #fff;
-    //font-family: 'Poppins', sans-serif;
-    font-family: Noto Sans TC,sans-serif;
-    font-size: 1.15em;
-    margin: 0;
-    padding: 0;
-    }
-    p {
-    opacity: 0.6;
-    line-height: 1.5;
-    }
-    img {
-    max-width: 100%;
-    }
-    a {
-      text-decoration: none;
-      color: #000;
-    }
-    button {
-        cursor: pointer;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    div {
-      list-style: none;
-    }
-    li {
-      line-height: 2.2;
-    }
-    h1,
-    h2,
-    h3 {
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-    .row {
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-    .btn {
-      display: block;
-      width: fit-content;
-      border: 1px solid #ff004f;
-      padding: 14px 50px;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #fff;
-      background-color: transparent;
-      transition: 0.5s;
-    }
-    .btn:hover {
-      background: #ff004f;
-    }
-    .btn.btn2 {
-      display: inline-block;
-      background: #ff004f;
-    }
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.section-title, 
+.section-subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5em;
+  font-weight: var(--font-medium);
+}
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+.button-icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+
+}
+
+/* For medium devices */
+
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+        .header,
+        .main,
+        .footer-container{
+            padding: 0;
+        }
+  }
 `
 
 export default GlobalStyles

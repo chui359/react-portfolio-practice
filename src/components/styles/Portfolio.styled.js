@@ -6,7 +6,6 @@ export const StylePortfolio = styled.div`
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 80px 0;
         text-align: center;
         
         .portfolio-card {

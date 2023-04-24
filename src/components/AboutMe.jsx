@@ -28,7 +28,7 @@ function AboutMe() {
       <div className="container">
         <div className="row">
           <div className="about-col-1">
-          <img src=".././images/about.png" alt="" />
+          <img src=".././images/sitting2.png" alt="" />
           </div>
           <div className="about-col-2">
             <h1 className='sub-title'>About Me</h1>

@@ -1,100 +1,120 @@
 import styled from "styled-components";
 
 export const StyleHero = styled.div`
-    display: flex;
-    margin-top: 200px;
 
-    h1 {
-        font-size: 70px;
-        font-weight: 700;
-        font-family: 'Rock Salt', cursive;
+    .home-container {
+        gap: 1rem;
     }
-
-    span {
-        color: ${({theme}) => theme.colors.orange};
-        text-decoration: underline;
-        text-decoration-color: ${({theme}) => theme.colors.yellow};
-        text-decoration-thickness: 8px;
-        //box-shadow: 0 10px;
-        //padding-bottom: 1px;
-    }
-
-    .Hero-dec {
-        margin-left: 50px;
-        margin-right: auto;
-        width: 500px;
-    }
-
-    p {
-        margin-top:30px;
-        color: ${({theme}) => theme.colors.gray};
-        font-size: 20px;
-        line-height: 1.5;
-    }
-
-    .dec-button {
-        padding: 25px 50px;
-        margin-top: 40px;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 600;
-        border-radius: 10px;
-        border: none;
-        background: ${({theme}) => theme.colors.brown};
-    }
-
-    .Hero-link {
-        display: flex;
-        justify-content: start;
+    .home-content {
+        grid-template-columns: .5fr 3fr;
+        padding-top: 3.5rem;
         align-items: center;
-        margin-top: 50px;
+    }
+    .home-social {
+        display:grid;
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+    }
+    .home-social-icon {
+        font-size: 1.25rem;
+        color: var(--first-color);
+    }
+    .home-social-icon:hover {
+        color: var(--first-color-alt);
     }
 
-    .Hero-link li{
-        margin-right: 30px;
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+    .imgBx img {
+        width: 200px;
+        border-radius: 150px;
+        background-color: var(--first-color);
+    }
+    .home-data {
+        grid-column: 1/3;
+    }
+    .home-title {
+        font-size: var(--big-font-size);
+    }
+    .home-subtitle {
+        font-size: var(--h3-font-size);
+        color: var(--text-color);
+        font-weight: var(--font-meduin);
+        margin-bottom: var(--mb-0-75);
+    }
+    .home-description {
+        margin-bottom: var(--mb-2);
+    }
+    .home-scroll {
+        display: none;
+    }
+    .home-scroll-button {
+        color: var(--first-color);
+        transition: .3s;
+    }
+    .home-scroll-button:hover {
+        transform: translateY(.25rem);
+    }
+    .home-scroll-mouse {
+        font-size: 2rem;
+    }
+    .home-scroll-name {
+        font-size: var(--small-font-size);
+        color: var(--title-color);
+        font-weight: var(--font-meduin);
+        margin-right: var(--mb-0-25);
+    }
+    .home-scroll-arrow{
+        font-size: 1.25rem;
     }
 
-    .Hero-contain {
-        text-align: center;
-        margin-right: 0;
-        margin-left: auto;
-        position: relative;
+    .hero-data {
+        margin-right:100px;
+    }
 
-        ul {
-            position: absolute;
-            top:60%;
-            left: 45%;
-            transform: translate(-50%, -50%);
-            color: white;
+    @media screen and (max-width: 350px) {
+        .home-content {
+            grid-template-columns: .25fr 3fr;
+        }
+        .imgBx img{
+            width: 180px;
         }
 
-        button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            background-color: white; 
-            color: black; 
-            border: 2px solid #555555;
+    }
+
+    /* For medium devices */
+    @media screen and (min-width: 568px) {
+        .home-content {
+            grid-template-columns:max-content 1fr 1fr;
+        }
+        .home-data{
+            grid-column: initial;
+        }
+        .home-img{
+            order: 1;
+            justify-self: center;
+        }
+        .imgBx img{
+            width: 280px;
         }
     }
 
-    .hero-img {
-        //position: relative;
-        z-index: -1;
-        width: 450px;
-
-    }
-
-    .Hero-inf {
-        position: absolute;
-        margin: 250px auto 0 90px;
+    /* For large devices */
+    @media screen and (min-width: 1024px) {
+        .imgBx img{
+            width: 320px;
+        }
+        .home-content {
+            grid-template-columns:0.3fr 1fr 1fr;
+        }
+        .home-scroll {
+        display: block;
         text-align: center;
-        color: white;
+        }
+
     }
 `

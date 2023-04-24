@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyleAbout = styled.div`
 
 #about {
-    padding: 80px 0;
     color: #ababab;
 }
 
