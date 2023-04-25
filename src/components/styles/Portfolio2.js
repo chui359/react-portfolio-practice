@@ -30,6 +30,6 @@ export const StyledPortfolio = styled.section`
     }
 }
 .swiper-slide{
-    /* height:300px; */
+    height: 400px;
 }
 `

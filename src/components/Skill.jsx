@@ -5,7 +5,6 @@ import { FaCode, FaAngleDown,FaServer,FaSwatchbook } from 'react-icons/fa'
 function Skill() {
 
     const ShowSkills = (e) => {
-        const content = document.getElementsByClassName('skills-content')
         const itemClass = e.currentTarget.getAttribute("skills-open");
         if(itemClass === "true"){
             e.currentTarget.setAttribute("skills-open", false);

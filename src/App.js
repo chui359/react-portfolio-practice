@@ -1,12 +1,13 @@
 
 import GlobalStyles from './components/styles/Global.styled';
-import { Container } from './components/styles/Container.styled';
 import  Hero  from './components/Hero';
 import { ThemeProvider } from 'styled-components';
 import NavMenu from './components/NavMenu';
 import About from './components/About';
 import Skill from './components/Skill';
 import Portfolio2 from './components/Portfolio2';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 
 const theme = {
   colors: {
@@ -39,7 +40,9 @@ function App() {
     <About/>
     <Skill/>
     <Portfolio2/>
-   
+    <ContactMe/>
+    <Footer/>
+    
     </ThemeProvider>
     </>
 

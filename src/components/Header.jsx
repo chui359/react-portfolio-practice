@@ -3,7 +3,6 @@ import { StyleHeader } from './styles/Header.styled'
 import { FaBars, FaHome, FaUser, FaRegFileCode, FaCommentDots, FaTimes } from 'react-icons/fa'
 import {Link} from 'react-scroll'
 
-
 function Header() {
 
   const clickNav = () => {

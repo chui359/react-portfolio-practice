@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleHero } from './styles/Hero.styled'
-import { FaGithubSquare, FaGithub, FaLinkedin,FaLinkedinIn,FaDribbble,FaAngleDoubleRight,FaMouse,FaAngleDoubleDown } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn,FaDribbble,FaAngleDoubleRight,FaMouse,FaAngleDoubleDown } from 'react-icons/fa'
 
 function Hero() {
   return (
@@ -12,13 +12,13 @@ function Hero() {
       <div className='home-container container grid'>
         <div className="home-content grid">
           <div className="home-social">
-            <a href="#" className='home-social-icon'>
+            <a href="/#" className='home-social-icon'>
               <FaLinkedinIn/>
             </a>
-            <a href="#" className='home-social-icon'>
+            <a href="/#" className='home-social-icon'>
               <FaDribbble/>
             </a>
-            <a href="#" className='home-social-icon'>
+            <a href="/#" className='home-social-icon'>
               <FaGithub/>
             </a>
           </div>
@@ -33,14 +33,14 @@ function Hero() {
             <h1 className="home-title">Hi, I'm YUN CHENG</h1>
             <h3 className="home-subtitle">Frontend developer</h3>
             <p className="home-description">home-description</p>
-            <a href="#" className="button button-flex">
+            <a href="/#" className="button button-flex">
               Contact Me<FaAngleDoubleRight className='button-icon'/>
             </a>
           </div>
         </div>
 
         <div className="home-scroll">
-          <a href="#about" className="home-scroll-button button-flex">
+          <a href="/#about" className="home-scroll-button button-flex">
           <FaMouse className='home-scroll-mouse'/>
           <span className='home-scroll-name'>Scroll down</span>
           <FaAngleDoubleDown className='home-scroll-arrow'/>

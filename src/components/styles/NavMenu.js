@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const StyleNav = styled.header`
-    width:100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--body-color);
+
+    .scroll-header{
+        width:100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--body-color);
+    }
+    
 
     .nav{
         max-width: 968px;
@@ -27,7 +31,7 @@ export const StyleNav = styled.header`
     }
 
     .nav-toggle{
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         cursor: pointer;
     }
     .nav-toggle:hover{
@@ -71,6 +75,9 @@ export const StyleNav = styled.header`
     .nav-menu[show-menu="true"]{
         bottom: 0;
     }
+    .scroll-header[scroll-header="true"]{
+        box-shadow: 0 -1px 4px rgba(0,0,0,0.15)
+    }
 
     @media screen and (max-width: 767px) {
         .nav-menu{
@@ -84,5 +91,47 @@ export const StyleNav = styled.header`
             border-radius: 1.5rem 1.5rem 0 0;
             transition: .3s;
         }
+    }
+
+    /* scroll up */
+    .scrollup{
+        position: fixed;
+        right: 1rem;
+        bottom: -20%;
+        background-color: var(--first-color);
+        opacity: 0.8;
+        padding: 0.3rem;
+        border-radius: 0.4rem;
+        z-index: var(--z-tooltip);
+        transition: 0.4s;
+    }
+
+    .scrollup:hover{
+        background-color: var(--first-color-alt);
+    }
+
+    .scrollup-icon{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .scrollup[show-scrollup="true"]{
+        bottom: 5rem;
+    }
+
+    /* theme button */
+    .nav-btns{
+        display: flex;
+        align-items: center;
+    }
+    
+    .change-theme{
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-right: var(--mb-1);
+        cursor: pointer;
+    }
+    .change-theme:hover{
+        color: var(--first-color);
     }
 `
