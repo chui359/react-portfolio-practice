@@ -5,6 +5,8 @@ import  Hero  from './components/Hero';
 import { ThemeProvider } from 'styled-components';
 import NavMenu from './components/NavMenu';
 import About from './components/About';
+import Skill from './components/Skill';
+import Portfolio2 from './components/Portfolio2';
 
 const theme = {
   colors: {
@@ -35,6 +37,8 @@ function App() {
     <NavMenu />
     <Hero/>
     <About/>
+    <Skill/>
+    <Portfolio2/>
    
     </ThemeProvider>
     </>
