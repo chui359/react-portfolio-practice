@@ -113,10 +113,33 @@ export const StyleHero = styled.div`
         }
     }
 
+    /* For medium devices */
+    @media screen and (min-width: 768px) {
+        .home-container{
+            row-gap: 5rem;
+        }
+        .home-content{
+            padding-top: 5.5rem;
+            column-gap: 2rem;
+        }
+        .imgBx img{
+            width: 270px;
+        }
+        .home-scroll{
+            display: block;
+        }
+        .home-scroll-button{
+            margin-left: 3rem;
+        }
+    }
+
     /* For large devices */
     @media screen and (min-width: 1024px) {
         .imgBx img{
             width: 320px;
+        }
+        .home-social{
+            transform: translateX(-6rem)
         }
         .home-content {
             grid-template-columns:0.3fr 1fr 1fr;

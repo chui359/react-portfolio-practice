@@ -13,7 +13,7 @@ export const StyledAbout = styled.section`
 }
 .about-info{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
 .about-info-title{
@@ -41,6 +41,25 @@ export const StyledAbout = styled.section`
 @media screen and (min-width: 568px) {
     .about-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .about-container{
+        column-gap: 5rem;
+    }
+    .about-img{
+        width: 350px;
+    }
+    .about-description{
+        text-align: initial;
+    }
+    .about-info{
+        justify-content: space-between;
+    }
+    .about-buttons{
+        justify-content: initial;
     }
 }
 ` 

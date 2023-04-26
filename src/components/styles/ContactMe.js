@@ -47,4 +47,20 @@ export const StyleContactMe = styled.section`
         outline: none;
         padding: 0.25rem 0.5rem 0.5rem 0; 
     }
+
+    @media screen and (min-width: 568px) {
+    .contact-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
+
+    /* For large devices */
+    @media screen and (min-width: 1024px) {
+        .contact-form{
+            width: 460px;
+        }
+        .contact-inputs{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight,FaAngleRight,FaAngleLeft } from 'react-icons/fa'
 import { StyledPortfolio } from './styles/Portfolio2'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
@@ -23,10 +23,21 @@ function Portfolio2() {
                 loop={true}
                 spaceBetween={20}
                 slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
+                navigation={{
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                  }}
+                pagination={{
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    bulletClass: 'my-swiper-bullet',
+                    bulletActiveClass: 'my-swiper-bullet-active',
+                }}
                 className='swiper-slide'
                 >
+                <div className="swiper-button-prev"><FaAngleLeft className='swiper-portfolio-icon'/></div>
+                <div className="swiper-button-next"><FaAngleRight className='swiper-portfolio-icon'/></div>
+                <div className='swiper-pagination'></div>
                 {/* portfolio 1 */}
                 <SwiperSlide className="portfolio-content grid">
                     <img src=".././images/what-to-eat3.png" alt="" className="portfolio-img" />

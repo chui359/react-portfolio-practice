@@ -8,6 +8,8 @@ import Skill from './components/Skill';
 import Portfolio2 from './components/Portfolio2';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
+import { Container } from './components/styles/Container.styled';
 
 const theme = {
   colors: {
@@ -36,11 +38,16 @@ function App() {
     <GlobalStyles />
 
     <NavMenu />
+
+    <Container>
     <Hero/>
     <About/>
     <Skill/>
+    <Experience/>
     <Portfolio2/>
     <ContactMe/>
+    </Container>
+    
     <Footer/>
     
     </ThemeProvider>

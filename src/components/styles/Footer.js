@@ -56,4 +56,31 @@ export const StyleFooter = styled.footer`
         color: #fff;
     }
 
+/* For medium devices */
+@media screen and (min-width: 568px) {
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .footer-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-bg{
+        padding: 3rem 0 3.5rem;
+    }
+    .footer-links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footer-socials{
+        justify-self: flex-end;
+    }
+    .footer-copy{
+        margin-top: 4.5rem;
+    }
+}
 `

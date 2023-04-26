@@ -112,15 +112,28 @@ img {
 }
 
 /* For medium devices */
+@media screen and (min-width: 768px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  body{
+    margin: 0;
+  }
+
+  .section{
+    padding: 6rem 0 2rem;
+  }
+  .section-subtitle{
+    margin-bottom: 4rem;
+  }
+
+}
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-        .header,
-        .main,
-        .footer-container{
-            padding: 0;
-        }
+
   }
 
 `

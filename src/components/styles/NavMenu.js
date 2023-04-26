@@ -144,4 +144,32 @@ export const StyleNav = styled.header`
         column-gap: 0;
     }
 }
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .scroll-header{
+        top: 0;
+        bottom: initial;
+        padding: 0 1rem;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 1rem;
+    }
+    .nav-icon,
+    .nav-close,
+    .nav-toggle{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        column-gap: 2rem;
+    }
+    .nav-menu{
+        margin-left: auto;
+    }
+    .change-theme{
+        margin: 0;
+    }
+}
 `
