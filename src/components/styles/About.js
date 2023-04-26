@@ -36,4 +36,11 @@ export const StyledAbout = styled.section`
     display: flex;
     justify-content:center;
 }
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+    .about-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 ` 

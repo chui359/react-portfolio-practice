@@ -134,4 +134,14 @@ export const StyleNav = styled.header`
     .change-theme:hover{
         color: var(--first-color);
     }
+
+    /* For small devices */
+@media screen and (max-width: 350px) {
+    .nav-menu{
+    padding: 2rem .25rem 4rem;
+    }
+    .nav-list{
+        column-gap: 0;
+    }
+}
 `

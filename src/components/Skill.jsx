@@ -19,7 +19,6 @@ function Skill() {
             <h2 className="section-title">Skills</h2>
             <span className="section-subtitle">My technical skills</span>
             <div className="skills-container container grid">
-                <div>
                     {/* skill 1 */}
                     <div className="skills-content" skills-open="true" onClick={ShowSkills}>
                         <div className="skills-header">
@@ -125,7 +124,6 @@ function Skill() {
 
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </StyledSkill>

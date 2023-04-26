@@ -74,4 +74,6 @@ export const StyleAbout = styled.div`
 .tab-contents.active-tab {
     display: block;
 }
+
+
 `

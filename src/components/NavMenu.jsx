@@ -20,6 +20,24 @@ const LinkAction = () => {
     navMenu.setAttribute("show-menu", false);
 }
 
+// dark/light mode button
+const [theme, setTheme] = useState(
+    localStorage.getItem('theme') || 'light-theme'
+    );
+    const toggleTheme = () => {
+        if (theme === 'light-theme') {
+        setTheme('dark-theme');
+        } 
+        else {
+        setTheme('light-theme');
+        }
+    };
+    useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;
+    }, [theme]);
+
+
 // check scroll, show scroll up button, show nav box-shadow
 const [scrollDir, setScrollDir] = useState("");
 
@@ -94,7 +112,7 @@ return (
 
         <div className="nav-btns">
             {/* theme change */}
-                <FaMoon className='change-theme' id='theme-button'/>
+                <FaMoon className='change-theme' id='theme-button' onClick={toggleTheme}/>
             <div className="nav-toggle" id="nav-toggle" onClick={OpenMenu}>
                 <FaTable/>
             </div>

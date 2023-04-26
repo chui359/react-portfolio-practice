@@ -105,8 +105,10 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
-
-
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }
 
 /* For medium devices */
@@ -120,6 +122,7 @@ img {
             padding: 0;
         }
   }
+
 `
 
 export default GlobalStyles

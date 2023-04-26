@@ -86,6 +86,16 @@ export const StyleHero = styled.div`
 
     }
 
+        /* For small devices */
+    @media screen and (max-width: 350px) {
+        .home-content{
+            grid-template-columns: .25fr 3fr;
+        }
+        .imgBx img{
+            width: 180px;
+        }
+    }
+
     /* For medium devices */
     @media screen and (min-width: 568px) {
         .home-content {

@@ -46,7 +46,8 @@ export const StyledSkill = styled.section`
 .skills-name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background-color: var(--first-color-lighter);
+    background-color: var(--first-color);
+    color: #fff;
     padding: 10px;
     display: inline-block;
     border-radius: 5px;
@@ -68,5 +69,18 @@ export const StyledSkill = styled.section`
     }
     }
 
+    /* For small devices */
+    @media screen and(max-width: 350px) {
+        .skills-title{
+            font-size: var(--normal-font-size);
+        }
+    }
+
+    /* For medium devices */
+    @media screen and (min-width: 568px) {
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 `
