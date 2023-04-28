@@ -10,7 +10,8 @@ export const StyledPortfolio = styled.section`
 }
 
 .portfolio-img{
-    width: 265px;
+    /* width: 265px; */
+    width: 100%;
     border-radius: 0.5rem;
     justify-self: center;
 }
@@ -22,6 +23,10 @@ export const StyledPortfolio = styled.section`
 
 .portfolio-description{
     margin-bottom: var(--mb-0-75);
+}
+
+.portfolio-button{
+    margin-top: var(--mb-0-5);
 }
 
 .portfolio-button:hover{
@@ -63,6 +68,20 @@ export const StyledPortfolio = styled.section`
   cursor: pointer;
 }
 
+.card-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card{
+    padding: 7px;
+    margin: 7px;
+    background-color: var(--first-color-lighter);
+    color: var(--title-color);
+    border-radius: 5px;
+}
+
 .my-swiper-bullet-active {
   background-color: var(--first-color);
 }
@@ -73,14 +92,14 @@ export const StyledPortfolio = styled.section`
         grid-template-columns: repeat(2, 1fr);
     }
     .swiper-slide{
-    height: 50vh;
+    height: 40vh;
     }
 }
 
 /* For medium devices */
 @media screen and (min-width: 768px) {
     .portfolio-img{
-        width:320px;
+        /* width:320px; */
     }
     .portfolio-content{
         align-items: center;
@@ -88,6 +107,8 @@ export const StyledPortfolio = styled.section`
 }
 
 @media screen and (min-width: 1024px) {
-
+    .swiper-slide{
+    height: 60vh;
+    }
 }
 `

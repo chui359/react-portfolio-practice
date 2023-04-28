@@ -44,28 +44,42 @@ function Portfolio2() {
                     <div className="portfolio-data">
                         <h3 className="portfolio-title">哇兔伊</h3>
                         <p className="portfolio-description">使用者可以在此新增喜歡的食物、食物類型。哇兔伊會制定一個食物的詢問計劃，透過排除法，一步步找出使用者當下對於食物的需求和喜好。</p>
+                        <div className='card-container'>
+                            <p className='card'>React</p>
+                            <p className='card'>node.js</p>
+                            <p className='card'>Express.js</p>
+                            <p className='card'>MongoDB</p>
+                        </div>
                         <a href="https://what-to-eat1.netlify.app/" target='_blank' rel="noopener noreferrer" className="button button-flex button-small portfolio-button">Demo <FaArrowRight className='button-icon'/></a>
                     </div>
                 </SwiperSlide>
 
                 {/* portfolio 2 */}
                 <SwiperSlide className="portfolio-content grid">
-                    <img src=".././images/what-to-eat3.png" alt="" className="portfolio-img" />
+                    <img src=".././images/rss-reader3.png" alt="" className="portfolio-img" />
 
                     <div className="portfolio-data">
                         <h3 className="portfolio-title">RSS閱讀器</h3>
-                        <p className="portfolio-description">使用者可以在此新增喜歡的食物、食物類型。哇兔伊會制定一個食物的詢問計劃，透過排除法，一步步找出使用者當下對於食物的需求和喜好。</p>
-                        <a href="/#" className="button button-flex button-small portfolio-button">Demo <FaArrowRight className='button-icon'/></a>
+                        <p className="portfolio-description">使用者可以輸入RSS的網址，來訂閱相關網站提供的資訊。以此可以定期查看網站是否有更新新的內容，然後呈現於介面讓使用者可以查看。</p>
+                        <div className='card-container'>
+                            <p className='card'>Vue</p>
+                        </div>
+                        <a href="https://yun-cheng-dashboard.netlify.app/" target='_blank' rel="noopener noreferrer" className="button button-flex button-small portfolio-button">Demo <FaArrowRight className='button-icon'/></a>
                     </div>
                 </SwiperSlide>
 
                 {/* portfolio 3 */}
                 <SwiperSlide className="portfolio-content grid">
-                    <img src=".././images/what-to-eat3.png" alt="" className="portfolio-img" />
+                    <img src=".././images/challenge1.png" alt="" className="portfolio-img" />
 
                     <div className="portfolio-data">
                         <h3 className="portfolio-title">切版挑戰</h3>
                         <p className="portfolio-description">使用者可以在此新增喜歡的食物、食物類型。哇兔伊會制定一個食物的詢問計劃，透過排除法，一步步找出使用者當下對於食物的需求和喜好。</p>
+                        <div className='card-container'>
+                            <p className='card'>HTML</p>
+                            <p className='card'>CSS</p>
+                            <p className='card'>JavaScript</p>
+                        </div>
                         <a href="/#" className="button button-flex button-small portfolio-button">Demo <FaArrowRight className='button-icon'/></a>
                     </div>
                 </SwiperSlide>

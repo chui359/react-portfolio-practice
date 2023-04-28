@@ -6,7 +6,7 @@ function ContactMe() {
   return (
     <StyleContactMe>
         <div className="contact section" id='contact'>
-            <h2 className="section-title">Contact Me</h2>
+            <h2 className="section-title">聯繫我</h2>
             <span className="section-subtitle">Get in touch</span>
 
             <div className="contact-container container grid">
@@ -15,7 +15,7 @@ function ContactMe() {
                         <FaPhoneAlt className='contact-icon'/>
 
                         <div>
-                            <h3 className='contact-title'>Call Me</h3>
+                            <h3 className='contact-title'>電話</h3>
                             <span className="contact-subtitle">0978523656</span>
                         </div>
                     </div>
@@ -24,8 +24,8 @@ function ContactMe() {
                         <FaEnvelope className='contact-icon'/>
 
                         <div>
-                            <h3 className='contact-title'>Email</h3>
-                            <span className="contact-subtitle">0978523656</span>
+                            <h3 className='contact-title'>信箱</h3>
+                            <span className="contact-subtitle">yuncheng3590@gmail.com</span>
                         </div>
                     </div>
 
