@@ -43,6 +43,10 @@ export const StyleExperience = styled.section`
     color: var(--text-color-light);
 }
 
+.calendar-icon{
+    margin-right: .5rem;
+}
+
 .experience-rounder{
     display: inline-block;
     width: 13px;
@@ -59,8 +63,11 @@ export const StyleExperience = styled.section`
     transform: translate(6px, -7px);
 }
 
+.experience-button[show-color="true"]{
+    color: var(--first-color);
+}
 .experience-content[show-content="true"]{
-    display: block;
+    display: block;    
 }
 .experience-content[show-content="false"]{
     display: none;
@@ -91,7 +98,7 @@ export const StyleExperience = styled.section`
         margin: 0 var(--mb-1);
     }
     .experience-section{
-        grid-template-columns: .5fr;
+        grid-template-columns: .6fr;
     }
 }
 `

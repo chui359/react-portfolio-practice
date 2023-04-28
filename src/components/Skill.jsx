@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledSkill } from './styles/Skill'
-import { FaCode, FaAngleDown,FaServer,FaSwatchbook } from 'react-icons/fa'
+import { FaCode, FaAngleDown,FaServer,FaCog } from 'react-icons/fa'
 
 function Skill() {
 
@@ -16,7 +16,7 @@ function Skill() {
   return (
     <StyledSkill>
         <div className="skills section" id='skills'>
-            <h2 className="section-title">Skills</h2>
+            <h2 className="section-title">專長</h2>
             <span className="section-subtitle">My technical skills</span>
             <div className="skills-container container grid">
                     {/* skill 1 */}
@@ -25,7 +25,7 @@ function Skill() {
                             <FaCode className='skills-icon'/>
 
                             <div>
-                                <h1 className="skills-title">Frontend developer</h1>
+                                <h1 className="skills-title">前端開發</h1>
                                 <span className="skills-subtitle">More then 4 years</span>
                             </div>
 
@@ -56,15 +56,21 @@ function Skill() {
                                     <h3 className="skills-name">React</h3>
                                 </div>
                             </div>
+
+                            <div className="skills-data">
+                                <div className="skills-title">
+                                    <h3 className="skills-name">Next.js</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     {/* skill 2 */}
                     <div className="skills-content" skills-open="false" onClick={ShowSkills}>
                         <div className="skills-header">
-                            <FaServer className='skills-icon'/>
+                            <FaCog className='skills-icon'/>
 
                             <div>
-                                <h1 className="skills-title">Backend developer</h1>
+                                <h1 className="skills-title">後端開發</h1>
                                 <span className="skills-subtitle">More then 4 years</span>
                             </div>
 
@@ -74,18 +80,25 @@ function Skill() {
                         <div className="skills-list grid">
                             <div className="skills-data">
                                 <div className="skills-title">
+                                    <h3 className="skills-name">C#</h3>
+                                </div>
+                            </div>
+
+                            <div className="skills-data">
+                                <div className="skills-title">
+                                    <h3 className="skills-name">ASP.NET</h3>
+                                </div>
+                            </div>
+
+                            <div className="skills-data">
+                                <div className="skills-title">
                                     <h3 className="skills-name">Node.js</h3>
                                 </div>
                             </div>
 
                             <div className="skills-data">
                                 <div className="skills-title">
-                                    <h3 className="skills-name">MongoDB</h3>
-                                </div>
-                            </div>
-                            <div className="skills-data">
-                                <div className="skills-title">
-                                    <h3 className="skills-name">Express</h3>
+                                    <h3 className="skills-name">Express.js</h3>
                                 </div>
                             </div>
 
@@ -94,10 +107,10 @@ function Skill() {
                     {/* skill 3 */}
                     <div className="skills-content" skills-open="false" onClick={ShowSkills}>
                         <div className="skills-header">
-                            <FaSwatchbook className='skills-icon'/>
+                            <FaServer className='skills-icon'/>
 
                             <div>
-                                <h1 className="skills-title">Designer</h1>
+                                <h1 className="skills-title">資料庫</h1>
                                 <span className="skills-subtitle">More then 4 years</span>
                             </div>
 
@@ -107,7 +120,7 @@ function Skill() {
                         <div className="skills-list grid">
                             <div className="skills-data">
                                 <div className="skills-title">
-                                    <h3 className="skills-name">Node.js</h3>
+                                    <h3 className="skills-name">ORACLE</h3>
                                 </div>
                             </div>
 
@@ -118,7 +131,7 @@ function Skill() {
                             </div>
                             <div className="skills-data">
                                 <div className="skills-title">
-                                    <h3 className="skills-name">Express</h3>
+                                    <h3 className="skills-name">SQL Server</h3>
                                 </div>
                             </div>
 

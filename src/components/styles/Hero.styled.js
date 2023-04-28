@@ -139,7 +139,7 @@ export const StyleHero = styled.div`
             width: 320px;
         }
         .home-social{
-            transform: translateX(-6rem)
+            /* transform: translateX(-6rem) */
         }
         .home-content {
             grid-template-columns:0.3fr 1fr 1fr;
@@ -147,6 +147,9 @@ export const StyleHero = styled.div`
         .home-scroll {
         display: block;
         text-align: center;
+        }
+        .home-social-icon {
+        font-size: 1.5rem;
         }
 
     }

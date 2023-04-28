@@ -6,7 +6,7 @@ function About() {
   return (
     <StyledAbout>
       <div className="about section" id='about'>
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title">關於我</h2>
         <span className="section-subtitle">My Introduction</span>
         <div className="about-container container grid">
           <img src=".././images/sitting2.png" alt="" className='about-img' />

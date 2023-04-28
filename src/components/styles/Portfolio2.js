@@ -30,7 +30,7 @@ export const StyledPortfolio = styled.section`
     }
 }
 .swiper-slide{
-    height: 50vh;
+    height: 65vh;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -73,7 +73,7 @@ export const StyledPortfolio = styled.section`
         grid-template-columns: repeat(2, 1fr);
     }
     .swiper-slide{
-    
+    height: 50vh;
     }
 }
 
@@ -88,8 +88,6 @@ export const StyledPortfolio = styled.section`
 }
 
 @media screen and (min-width: 1024px) {
-    .portfolio-content{
-        column-gap: 5rem;
-    }
+
 }
 `

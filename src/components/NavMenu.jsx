@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleNav } from './styles/NavMenu'
-import { FaHome, FaUser, FaRegFileCode, FaCommentDots, FaRegImage, FaTimes, FaTable, FaArrowUp,FaMoon } from 'react-icons/fa'
+import { FaHome, FaUser, FaRegFileCode, FaCommentDots, FaRegImage, FaTimes, FaTable, FaArrowUp, FaMoon, FaSun } from 'react-icons/fa'
 import { useEffect,useState } from 'react'
 
 function NavMenu() {
@@ -25,11 +25,19 @@ const [theme, setTheme] = useState(
     localStorage.getItem('theme') || 'light-theme'
     );
     const toggleTheme = () => {
+        const moonIcon = document.getElementById('moon-button');
+        const sunIcon = document.getElementById('sun-button');
+
         if (theme === 'light-theme') {
         setTheme('dark-theme');
+        moonIcon.setAttribute("show-icon", false);
+        sunIcon.setAttribute("show-icon", true);
+        
         } 
         else {
         setTheme('light-theme');
+        moonIcon.setAttribute("show-icon", true);
+        sunIcon.setAttribute("show-icon", false);
         }
     };
     useEffect(() => {
@@ -83,27 +91,32 @@ return (
             <ul className="nav-list grid">
                 <li className="nav-item">
                     <a href="/#home" className="nav-link" onClick={LinkAction}>
-                        <FaHome className='nav-icon'/>Home
+                        <FaHome className='nav-icon'/>首頁
                     </a>
                 </li>
                 <li className="nav-item">
                     <a href="/#about" className="nav-link" onClick={LinkAction}>
-                        <FaUser className='nav-icon'/>About
+                        <FaUser className='nav-icon'/>關於我
                     </a>
                 </li>
                 <li className="nav-item">
                     <a href="/#skills" className="nav-link" onClick={LinkAction}>
-                        <FaRegFileCode className='nav-icon'/>Skills
+                        <FaRegFileCode className='nav-icon'/>專長
+                    </a>
+                </li>
+                <li className="nav-item">
+                    <a href="/#experience" className="nav-link" onClick={LinkAction}>
+                        <FaRegFileCode className='nav-icon'/>經歷
                     </a>
                 </li>
                 <li className="nav-item">
                     <a href="/#portfolio" className="nav-link" onClick={LinkAction}>
-                        <FaRegImage className='nav-icon'/>Portfolio
+                        <FaRegImage className='nav-icon'/>作品集
                     </a>
                 </li>
                 <li className="nav-item">
                     <a href="/#contact" className="nav-link" onClick={LinkAction}>
-                        <FaCommentDots className='nav-icon'/>Contackme
+                        <FaCommentDots className='nav-icon'/>聯繫我
                     </a>
                 </li>
             </ul>
@@ -112,7 +125,8 @@ return (
 
         <div className="nav-btns">
             {/* theme change */}
-                <FaMoon className='change-theme' id='theme-button' onClick={toggleTheme}/>
+                <FaMoon className='change-theme' show-icon="true" id='moon-button' onClick={toggleTheme}/>
+                <FaSun className='change-theme sun-icon' show-icon="false" id='sun-button' onClick={toggleTheme}/>
             <div className="nav-toggle" id="nav-toggle" onClick={OpenMenu}>
                 <FaTable/>
             </div>

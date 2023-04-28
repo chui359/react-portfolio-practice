@@ -72,9 +72,14 @@ export const StyleNav = styled.header`
     .nav-close:hover{
         color: var(--first-color-alt);
     }
+    .change-theme[show-icon="false"]{
+        display:none;
+    }
+
     .nav-menu[show-menu="true"]{
         bottom: 0;
     }
+
     .scroll-header[scroll-header="true"]{
         box-shadow: 0 -1px 4px rgba(0,0,0,0.15)
     }
@@ -155,7 +160,9 @@ export const StyleNav = styled.header`
     .nav{
         height: calc(var(--header-height) + 1.5rem);
         column-gap: 1rem;
+        max-width: 1124px;
     }
+        
     .nav-icon,
     .nav-close,
     .nav-toggle{
@@ -170,6 +177,8 @@ export const StyleNav = styled.header`
     }
     .change-theme{
         margin: 0;
+        font-size: 1.5rem;
+        margin-left: var(--mb-1);
     }
 }
 `

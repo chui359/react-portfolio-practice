@@ -30,8 +30,8 @@ function Hero() {
           </div>
 
           <div className="home-data">
-            <h1 className="home-title">Hi, I'm YUN CHENG</h1>
-            <h3 className="home-subtitle">Frontend developer</h3>
+            <h1 className="home-title">吳昀澄</h1>
+            <h3 className="home-subtitle">程式設計師</h3>
             <p className="home-description">home-description</p>
             <a href="/#" className="button button-flex">
               Contact Me<FaAngleDoubleRight className='button-icon'/>
@@ -42,7 +42,7 @@ function Hero() {
         <div className="home-scroll">
           <a href="/#about" className="home-scroll-button button-flex">
           <FaMouse className='home-scroll-mouse'/>
-          <span className='home-scroll-name'>Scroll down</span>
+          <span className='home-scroll-name'>下滑</span>
           <FaAngleDoubleDown className='home-scroll-arrow'/>
           </a>
         </div>

@@ -8,10 +8,14 @@ function Experience() {
         const education = document.getElementById('education');
         const showEducation = education.getAttribute('show-content');
         const work = document.getElementById('work');
+        const btnEducation = document.getElementById('button-education');
+        const btnWork = document.getElementById('button-work');
 
         if(showEducation === 'false'){
             education.setAttribute('show-content', true);
             work.setAttribute('show-content', false);
+            btnEducation.setAttribute('show-color', true);
+            btnWork.setAttribute('show-color', false)
         }
     }
 
@@ -19,26 +23,30 @@ function Experience() {
         const education = document.getElementById('education');
         const work = document.getElementById('work');
         const showWork = work.getAttribute('show-content');
+        const btnWork = document.getElementById('button-work');
+        const btnEducation = document.getElementById('button-education');
 
         if(showWork === 'false'){
             education.setAttribute('show-content', false);
             work.setAttribute('show-content', true);
+            btnEducation.setAttribute('show-color', false);
+            btnWork.setAttribute('show-color', true)
         }
     }
 
   return (
     <StyleExperience>
-        <div className="experience section">
-            <h2 className="section-title">Experience</h2>
+        <div className="experience section" id='experience'>
+            <h2 className="section-title">經歷</h2>
             <span className="section-subtitle">My personal journey</span>
 
             <div className="experience-container container">
                 <div className="experience-tabs">
-                    <div className="experience-button button-flex" onClick={ShowEducation}>
-                        <FaUserGraduate className='experience-icon'/>Education
+                    <div className="experience-button button-flex" id='button-education' show-color="true" onClick={ShowEducation}>
+                        <FaUserGraduate className='experience-icon'/>學歷
                     </div>
-                    <div className="experience-button button-flex" onClick={ShowWork}>
-                        <FaUserTie className='experience-icon'/>Work
+                    <div className="experience-button button-flex" id='button-work' show-color="false" onClick={ShowWork}>
+                        <FaUserTie className='experience-icon'/>工作
                     </div>
                 </div>
 
@@ -48,10 +56,10 @@ function Experience() {
                         {/* experience 1 */}
                         <div className="experience-data">
                             <div>
-                                <h3 className="experience-title">Computer Enginner</h3>
+                                <h3 className="experience-title">資訊管理學系|學士</h3>
                                 <span className="experience-subtitle">南華大學</span>
                                 <div className="experience-calendar">
-                                    <FaRegCalendarAlt/>2017-2021
+                                    <FaRegCalendarAlt className='calendar-icon'/>2016-2019
                                 </div>
                             </div>
 
@@ -71,29 +79,14 @@ function Experience() {
                             </div>
 
                             <div>
-                                <h3 className="experience-title">Web design</h3>
-                                <span className="experience-subtitle">南華大學</span>
+                                <h3 className="experience-title">醫療資訊管理學系|碩士</h3>
+                                <span className="experience-subtitle">國立中正大學</span>
                                 <div className="experience-calendar">
-                                    <FaRegCalendarAlt/>2017-2021
+                                    <FaRegCalendarAlt className='calendar-icon'/>2017-2021
                                 </div>
                             </div>
                         </div>
 
-                        {/* experience 3 */}
-                        <div className="experience-data">
-                            <div>
-                                <h3 className="experience-title">Computer Enginner</h3>
-                                <span className="experience-subtitle">南華大學</span>
-                                <div className="experience-calendar">
-                                    <FaRegCalendarAlt/>2017-2021
-                                </div>
-                            </div>
-
-                            <div>
-                                <span className="experience-rounder"></span>
-                                <span className="experience-line"></span>
-                            </div>
-                        </div>
                     </div>
 
                     {/* experience content 2 */}
@@ -101,34 +94,16 @@ function Experience() {
                         {/* experience 1 */}
                         <div className="experience-data">
                             <div>
-                                <h3 className="experience-title">Software Enginner</h3>
-                                <span className="experience-subtitle">光田醫院</span>
+                                <h3 className="experience-title">程式設計師(申報組)</h3>
+                                <span className="experience-subtitle">光田綜合醫院</span>
                                 <div className="experience-calendar">
-                                    <FaRegCalendarAlt/>2017-2021
+                                    <FaRegCalendarAlt className='calendar-icon'/>2017-2021
                                 </div>
                             </div>
 
                             <div>
                                 <span className="experience-rounder"></span>
                                 <span className="experience-line"></span>
-                            </div>
-                        </div>
-
-                        {/* experience 2 */}
-                        <div className="experience-data">
-                            <div></div>
-
-                            <div>
-                                <span className="experience-rounder"></span>
-                                <span className="experience-line"></span>
-                            </div>
-
-                            <div>
-                                <h3 className="experience-title">Web design</h3>
-                                <span className="experience-subtitle">南華大學</span>
-                                <div className="experience-calendar">
-                                    <FaRegCalendarAlt/>2017-2021
-                                </div>
                             </div>
                         </div>
 

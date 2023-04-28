@@ -133,7 +133,13 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-
+  .container{
+    max-width: 1024px;
+  }
+  .section{
+    padding: 8rem 0 2rem;
+  }
+  
   }
 
 `
