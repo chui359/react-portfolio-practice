@@ -78,7 +78,7 @@ export const StyledPortfolio = styled.section`
     padding: 7px;
     margin: 7px;
     background-color: var(--first-color-lighter);
-    color: var(--title-color);
+    color: black;
     border-radius: 5px;
 }
 

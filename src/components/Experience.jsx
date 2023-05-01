@@ -94,7 +94,7 @@ function Experience() {
                         {/* experience 1 */}
                         <div className="experience-data">
                             <div>
-                                <h3 className="experience-title">程式設計師(申報組)</h3>
+                                <h3 className="experience-title">軟體工程師(申報組)</h3>
                                 <span className="experience-subtitle">光田綜合醫院</span>
                                 <div className="experience-calendar">
                                     <FaRegCalendarAlt className='calendar-icon'/>2017-2021

@@ -31,10 +31,10 @@ function Hero() {
 
           <div className="home-data">
             <h1 className="home-title">吳昀澄</h1>
-            <h3 className="home-subtitle">程式設計師</h3>
-            <p className="home-description">home-description</p>
-            <a href="/#" className="button button-flex">
-              Contact Me<FaAngleDoubleRight className='button-icon'/>
+            <h3 className="home-subtitle">軟體工程師</h3>
+            <p className="home-description">嗨！歡迎來到我的個人網站。<br/>這裡有關於我的最新消息和網頁作品。</p>
+            <a href="/#contact" className="button button-flex">
+              聯繫我<FaAngleDoubleRight className='button-icon'/>
             </a>
           </div>
         </div>

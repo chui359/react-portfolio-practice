@@ -47,6 +47,11 @@ export const StyleContactMe = styled.section`
         outline: none;
         padding: 0.25rem 0.5rem 0.5rem 0; 
     }
+    button{
+        border: none;
+        text-decoration: none;
+        font-size: var(--h3-font-size);
+    }
 
     @media screen and (min-width: 568px) {
     .contact-container{

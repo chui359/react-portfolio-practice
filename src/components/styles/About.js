@@ -36,6 +36,10 @@ export const StyledAbout = styled.section`
     display: flex;
     justify-content:center;
 }
+p{
+    line-height: 1.4em;
+    text-indent: 2em;
+}
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
