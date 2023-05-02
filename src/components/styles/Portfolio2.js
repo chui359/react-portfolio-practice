@@ -92,7 +92,7 @@ export const StyledPortfolio = styled.section`
         grid-template-columns: repeat(2, 1fr);
     }
     .swiper-slide{
-    height: 40vh;
+    height: 50vh;
     }
 }
 
