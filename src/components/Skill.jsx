@@ -92,7 +92,19 @@ function Skill() {
 
                             <div className="skills-data">
                                 <div className="skills-title">
-                                    <h3 className="skills-name">Node.js / Express.js / JWT</h3>
+                                    <h3 className="skills-name">Node.js</h3>
+                                </div>
+                            </div>
+
+                            <div className="skills-data">
+                                <div className="skills-title">
+                                    <h3 className="skills-name">Express.js</h3>
+                                </div>
+                            </div>
+
+                            <div className="skills-data">
+                                <div className="skills-title">
+                                    <h3 className="skills-name">JWT</h3>
                                 </div>
                             </div>
 

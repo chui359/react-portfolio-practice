@@ -20,6 +20,10 @@ export const StyleNav = styled.header`
         align-items: center;
     }
 
+    .nav-logo{
+        /* background-image: url(".././images/brush1.png"); */
+    }
+
     .nav-logo,
     .nav-toggle{
         color: var(--title-color);

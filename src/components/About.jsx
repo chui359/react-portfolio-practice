@@ -37,8 +37,8 @@ function About() {
             </div> */}
             
             <div className="about-buttons">
-              <a href="/#" className="button button-flex">
-              Download CV<FaFileDownload className='button-icon'/>
+              <a href="/.././files/YUN-CHENG-RESUME.pdf" download className="button button-flex">
+              下載簡歷<FaFileDownload className='button-icon'/>
               </a>
             </div>
 
