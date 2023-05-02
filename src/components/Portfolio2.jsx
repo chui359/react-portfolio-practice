@@ -41,6 +41,7 @@ function Portfolio2() {
                 {/* portfolio 1 */}
                 <SwiperSlide className="portfolio-content grid">
                     <img src=".././images/what-to-eat-blue.png" alt="" className="portfolio-img" />
+                    
                     <div className="portfolio-data">
                         <h3 className="portfolio-title">哇兔伊</h3>
                         <p className="portfolio-description">使用者可以在此新增喜歡的食物、食物類型。哇兔伊會制定一個食物的詢問計劃，透過排除法，一步步找出使用者當下對於食物的需求和喜好。</p>
