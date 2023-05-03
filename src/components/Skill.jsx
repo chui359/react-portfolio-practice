@@ -26,7 +26,7 @@ function Skill() {
 
                             <div>
                                 <h1 className="skills-title">前端開發</h1>
-                                <span className="skills-subtitle">More then 4 years</span>
+                                {/* <span className="skills-subtitle">More then 4 years</span> */}
                             </div>
 
                             <FaAngleDown className='skills-arrow'/>
@@ -71,7 +71,7 @@ function Skill() {
 
                             <div>
                                 <h1 className="skills-title">後端開發</h1>
-                                <span className="skills-subtitle">More then 4 years</span>
+                                {/* <span className="skills-subtitle">More then 4 years</span> */}
                             </div>
 
                             <FaAngleDown className='skills-arrow'/>
@@ -117,7 +117,7 @@ function Skill() {
 
                             <div>
                                 <h1 className="skills-title">資料庫</h1>
-                                <span className="skills-subtitle">More then 4 years</span>
+                                {/* <span className="skills-subtitle">More then 4 years</span> */}
                             </div>
 
                             <FaAngleDown className='skills-arrow'/>
