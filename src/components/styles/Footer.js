@@ -67,7 +67,8 @@ export const StyleFooter = styled.footer`
 /* For medium devices */
 @media screen and (min-width: 768px) {
     .footer-container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     .footer-bg{
         padding: 3rem 0 3.5rem;

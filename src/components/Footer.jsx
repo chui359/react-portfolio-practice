@@ -15,17 +15,17 @@ function Footer() {
 
                     <ul className="footer-links">
                         <li>
-                            <a href="/#" className="footer-links">Home</a>
+                            <a href="/#home" className="footer-links">Home</a>
                         </li>
                         <li>
-                            <a href="/#" className="footer-links">Portfolio</a>
+                            <a href="/#portfolio" className="footer-links">Portfolio</a>
                         </li>
                         <li>
-                            <a href="/#" className="footer-links">Contactme</a>
+                            <a href="/#contact" className="footer-links">Contactme</a>
                         </li>
                     </ul>
 
-                    <div className="footer-socials">
+                    {/* <div className="footer-socials">
                         <a href="/#" target='_blank' className="footer-social">
                             <FaFacebookF/>
                         </a>
@@ -35,7 +35,7 @@ function Footer() {
                         <a href="/#" target='_blank' className="footer-social">
                             <FaTwitter/>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
                 <p className="footer-copy">&#169; YUN CHENG. All right reserved</p>
