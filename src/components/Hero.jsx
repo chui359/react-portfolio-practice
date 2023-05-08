@@ -12,13 +12,13 @@ function Hero() {
       <div className='home-container container grid'>
         <div className="home-content grid">
           <div className="home-social">
-            <a href="/#" className='home-social-icon'>
+            <a href="https://www.linkedin.com/in/yun-cheng3590/" target='_blank' rel="noopener noreferrer" className='home-social-icon'>
               <FaLinkedinIn/>
             </a>
-            <a href="/#" className='home-social-icon'>
+            <a href="https://yun-cheng-website.netlify.app" target='_blank' rel="noopener noreferrer" className='home-social-icon'>
               <FaDribbble/>
             </a>
-            <a href="/#" className='home-social-icon'>
+            <a href="https://github.com/chui359" target='_blank' rel="noopener noreferrer" className='home-social-icon'>
               <FaGithub/>
             </a>
           </div>
